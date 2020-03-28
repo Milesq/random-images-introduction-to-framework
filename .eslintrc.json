@@ -1,0 +1,24 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "prettier"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./src"],
+        "extensions": [".js", ".svelte"]
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "linebreak-style": ["error", "windows"],
+    "prefer-const": "warn",
+    "no-unused-vars": "warn",
+    "no-console": "off"
+  }
+}
